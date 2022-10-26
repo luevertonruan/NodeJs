@@ -1,8 +1,8 @@
-var r = require('readline-sync');
+var readlineSync = require('readline-sync');
 let resultado = 0;
 let soma = 0;
 let limite = 0;
-//let opcaoIniciar = "M";
+let opcaoIniciar = "M";
 /*             ---------------------
                                     VALIDADOR DE CPF */
 function validaCPF(CPF, multiplicador) {
@@ -28,26 +28,25 @@ function validaCPF(CPF, multiplicador) {
 }
 function executar() {
   //              -----------------    VALIDADOR DE CPF
-  console.log('Você escolheu o Validador de CPF!\n');
-  let CPF = [9,7,4,9,2,4,1,2,0,7,0];
-  console.log("CPF verificado:"+CPF)
-  /* while (opcaoIniciar == "M") {}
-  let i=0;
-  for (i=0; i<11; i++) {
-      
-    CPF[i] = (r.question(`Informe o ${i + 1}º número do CPF:`));
-  }
-    console.log(CPF);*/
+  console.log("Você escolheu o Validador de CPF!\n");
+  let CPF = [];
+  while (opcaoIniciar == "M") {
+    /**/
+    let i = 0;
+    for (i = 0; i < 11; i++) {
+      CPF[i] = readlineSync.question(`Informe o ${i + 1}º número do CPF:`);
+    }
+    console.log("CPF verificado:" + CPF);
 
     let digito1 = validaCPF(CPF, 10);
     let digito2 = validaCPF(CPF, 11);
-    console.log('Primeiro digito verificador:' + digito1 + "\n");
-    console.log('Segundo digito verificador:' + digito2 + "\n");
+    console.log("Primeiro digito verificador:" + digito1 + "\n");
+    console.log("Segundo digito verificador:" + digito2 + "\n");
     if ((CPF[9] == digito1) & (CPF[10] == digito2)) {
-      console.log('CPF válido!\n');
+      console.log("CPF válido!\n");
     } else {
-      console.log('CPF inválido!\n');
+      console.log("CPF inválido!\n");
     }
-  
+  }
 }
 executar();
