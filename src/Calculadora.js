@@ -7,7 +7,7 @@ function repete(){                                                              
     switch (opcaoRepete){
     case 'S':
       console.clear();
-      executar();
+      executaCalculadora();
       break
     case 'N':
       console.clear();
@@ -47,7 +47,7 @@ function calculadoraTradicional(digito1, digito2) {                           //
   return resultado;
 }
 
-function executar() {
+function executaCalculadora() {
   console.log("\nVocê escolheu a calculadora tradicional!\n");
   opcaoOperadorCalculadora =
     "Escolha a operação ideal:\n (+) Soma\t (-) Subtração\n (/) Divisão\t (*) Multiplicação\n" /*(S) Voltar ao menu principal\n*/;
@@ -78,8 +78,8 @@ function executar() {
   ) {
     console.clear();
     console.log(opcaoErrada);
-    executar();
+    executaCalculadora();
   } 
   
 }
-executar();
+executaCalculadora();
