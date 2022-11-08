@@ -1,5 +1,4 @@
 var readlineSync = require("readline-sync");
-let opcaoIniciar = "M";
 
 function Matriz(matrizO){
   console.clear;
@@ -39,6 +38,5 @@ function executaMatriz(){
   };
   Matriz(matrizO);
 }
-executaMatriz();
-
-//                                        GERADOR DE MATRIZ TRANSPOSTA - SEM FUNÇÃO CORRESPONDENTE
+//executaMatriz();
+module.exports.executaMatriz=executaMatriz;
