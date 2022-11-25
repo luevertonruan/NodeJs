@@ -1,0 +1,18 @@
+{
+  "data": {
+    "id": "1594704195193651202",
+    "created_at": "2022-11-21T14:48:02.000Z",
+    "author_id": "1479878322234572801",
+    "text": "sim amg  um relacionamento q terminou e voltou 35 vezes  eh saudável",
+    "edit_history_tweet_ids": ["1594704195193651202"]
+  },
+  "includes": {
+    "users": [
+      {
+        "id": "1479878322234572801",
+        "name": "hm, indireta!",
+        "username": "ouindireta"
+      }
+    ]
+  }
+}
